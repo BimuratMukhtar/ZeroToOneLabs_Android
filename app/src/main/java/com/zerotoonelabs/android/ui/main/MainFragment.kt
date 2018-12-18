@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import com.zerotoonelabs.android.R
 
 class MainFragment : Fragment() {
@@ -20,7 +21,15 @@ class MainFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.main_fragment, container, false)
+        val root = inflater.inflate(R.layout.main_fragment, container, false)
+
+        val btnPicker = root.findViewById<Button>(R.id.picker)
+
+        btnPicker.setOnClickListener {
+
+        }
+
+        return root
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
