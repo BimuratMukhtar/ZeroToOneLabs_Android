@@ -64,12 +64,14 @@ bintray {
         desc = libraryDescription
 
         websiteUrl = siteUrl
+        issueTrackerUrl = issueTracker
         vcsUrl = gitUrl
         licenses = allLicenses
         publish = true
         publicDownloadNumbers = true
         version {
             desc = libraryDescription
+            released = releasedVersionDate
             gpg {
                 sign = true //Determines whether to GPG sign the files. The default is false
                 passphrase = properties.getProperty("bintray.gpg.password")

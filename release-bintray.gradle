@@ -14,8 +14,12 @@ ext {
 
     siteUrl = 'https://github.com/BimuratMukhtar/ZeroToOneLabs_Android'
     gitUrl = 'https://github.com/BimuratMukhtar/ZeroToOneLabs_Android.git'
+    issueTracker = 'https://github.com/bintray/gradle-bintray-plugin/issues'
+
+    githubRepo = 'BimuratMukhtar/ZeroToOneLabs_Android'
 
     libraryVersion = POM_VERSION
+    releasedVersionDate = new Date()
 
     developerId = 'bimuratmukhtar'
     developerName = 'Bimurat Mukhtar'
