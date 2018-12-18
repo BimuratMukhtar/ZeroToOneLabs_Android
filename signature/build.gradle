@@ -11,7 +11,7 @@ android {
         minSdkVersion 19
         targetSdkVersion 28
         versionCode 1
-        versionName project.getProperty("libraryVersion")
+        versionName POM_VERSION
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
