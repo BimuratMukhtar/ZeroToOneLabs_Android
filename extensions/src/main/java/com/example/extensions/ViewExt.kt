@@ -33,19 +33,24 @@ fun View.hideKeyboard(): Boolean {
 fun View.getLayoutInflater() = context.getLayoutInflater()
 
 //to set View's left padding
+
 fun View.setPaddingLeft(value: Int) = setPadding(value, paddingTop, paddingRight, paddingBottom)
 
 //to set View's right padding
+
 fun View.setPaddingRight(value: Int) = setPadding(paddingLeft, paddingTop, value, paddingBottom)
 
 //set an onclick listener
+
 fun <T : View> T.click(block: (T) -> Unit) = setOnClickListener { block(it as T) }
 
 
-//to set OnClickListener on a view.
+//to set OnClickListener on a view
+
 fun <T : View> T.longClick(block: (T) -> Boolean) = setOnLongClickListener { block(it as T) }
 
 //show the view  (visibility = View.VISIBLE)
+
 fun View.show() : View {
     if (visibility != View.VISIBLE) {
         visibility = View.VISIBLE
