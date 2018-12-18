@@ -3,6 +3,7 @@ package com.example.extensions
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Canvas
+import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.inputmethod.InputMethodManager
@@ -93,4 +94,43 @@ fun View.getBitmap(): Bitmap {
     draw(canvas)
     canvas.save()
     return bmp
+}
+
+
+// inflate layout for ViewGroup
+fun ViewGroup.inflate(layoutRes: Int): View {
+    return LayoutInflater.from(context).inflate(layoutRes, this, false)
+}
+
+//get views by tag for ViewGroup
+fun ViewGroup.getViewsByTag(tag: String): ArrayList<View> {
+    val views = ArrayList<View>()
+    val childCount = childCount
+    for (i in 0..childCount - 1) {
+        val child = getChildAt(i)
+        if (child is ViewGroup) {
+            views.addAll(child.getViewsByTag(tag))
+        }
+
+        val tagObj = child.tag
+        if (tagObj != null && tagObj == tag) {
+            views.add(child)
+        }
+    }
+    return views
+}
+
+
+//to remove views by tag ViewGroup
+fun ViewGroup.removeViewsByTag(tag: String) {
+    for (i in 0..childCount - 1) {
+        val child = getChildAt(i)
+        if (child is ViewGroup) {
+            child.removeViewsByTag(tag)
+        }
+
+        if (child.tag == tag) {
+            removeView(child)
+        }
+    }
 }
