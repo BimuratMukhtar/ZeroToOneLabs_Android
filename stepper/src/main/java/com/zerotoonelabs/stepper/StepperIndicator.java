@@ -860,7 +860,7 @@ public class StepperIndicator extends View implements ViewPager.OnPageChangeList
             canvas.drawCircle(indicator, centerY, circleRadius, getStepCirclePaint(i));
 
             // Draw the step number inside the back circle if the flag for this is set to true
-            if (showStepTextNumber) {
+            if (showStepTextNumber && i!=currentStep) {
                 final String stepLabel = String.valueOf(i + 1);
 
                 stepAreaRect.set((int) (indicator - circleRadius), (int) (centerY - circleRadius),
