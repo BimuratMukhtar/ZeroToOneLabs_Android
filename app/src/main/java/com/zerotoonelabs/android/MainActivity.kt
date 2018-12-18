@@ -2,7 +2,9 @@ package com.zerotoonelabs.android
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.zerotoonelabs.extensions.getColorCompat
 import com.zerotoonelabs.android.ui.main.MainFragment
+import kotlinx.android.synthetic.main.main_activity.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,6 +16,9 @@ class MainActivity : AppCompatActivity() {
                 .replace(R.id.container, MainFragment.newInstance())
                 .commitNow()
         }
+        text.setBackgroundColor(getColorCompat(R.color.colorAccent))
+
+
     }
 
 }
