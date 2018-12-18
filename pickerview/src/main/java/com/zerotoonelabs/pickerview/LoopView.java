@@ -1,4 +1,4 @@
-package com.example.pickerview;
+package com.zerotoonelabs.pickerview;
 
 import android.annotation.TargetApi;
 import android.content.Context;
