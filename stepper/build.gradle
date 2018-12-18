@@ -9,7 +9,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 28
         versionCode 1
-        versionName "1.0"
+        versionName POM_VERSION
 
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
 
@@ -23,6 +23,8 @@ android {
     }
 
 }
+
+apply from: rootProject.file('release-bintray.gradle')
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
