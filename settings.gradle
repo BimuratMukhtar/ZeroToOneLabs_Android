@@ -1,1 +1,1 @@
-include ':app', ':signature', ':extensions'
+include ':app', ':signature', ':extensions', ':stepper'
