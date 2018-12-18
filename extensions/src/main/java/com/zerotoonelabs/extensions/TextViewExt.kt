@@ -1,4 +1,4 @@
-package com.example.extensions
+package com.zerotoonelabs.extensions
 
 import android.graphics.Paint
 import android.support.v4.content.ContextCompat

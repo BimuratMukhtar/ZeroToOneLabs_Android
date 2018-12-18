@@ -1,4 +1,4 @@
-package com.example.extensions
+package com.zerotoonelabs.extensions
 
 import android.support.annotation.StringRes
 import android.support.v4.app.Fragment

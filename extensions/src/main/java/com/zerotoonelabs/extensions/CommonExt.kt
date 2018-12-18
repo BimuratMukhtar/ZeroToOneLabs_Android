@@ -1,4 +1,4 @@
-package com.example.extensions
+package com.zerotoonelabs.extensions
 
 import android.arch.lifecycle.ViewModel
 import android.content.SharedPreferences

@@ -2,7 +2,7 @@ package com.zerotoonelabs.android
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.example.extensions.getColorCompat
+import com.zerotoonelabs.extensions.getColorCompat
 import com.zerotoonelabs.android.ui.main.MainFragment
 import kotlinx.android.synthetic.main.main_activity.*
 

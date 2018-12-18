@@ -1,4 +1,4 @@
-package com.example.extensions
+package com.zerotoonelabs.extensions
 
 import android.app.Activity
 import android.app.Notification
