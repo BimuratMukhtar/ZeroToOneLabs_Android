@@ -19,7 +19,7 @@ import android.widget.Button;
 import android.widget.PopupWindow;
 import com.zerotoonelabs.pickerview.LoopScrollListener;
 import com.zerotoonelabs.pickerview.LoopView;
-import com.example.pickerview.R;
+import com.zerotoonelabs.pickerview.R;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
