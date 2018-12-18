@@ -1,8 +1,8 @@
-	##Generate-Android-Structure Script:
+	###Generate-Android-Structure Script:
 
 The script is intended to automatically make MVVM package structure of Android applications for 021labs company employees.
 
-	GET STARTED:
+	###GET STARTED:
 1) Create New Empty/Basic Android Project in Android Studio
 2) Make sure your package name is com.zerotoonelabs.{app_name}
 2) Add this script into your project (top level)
