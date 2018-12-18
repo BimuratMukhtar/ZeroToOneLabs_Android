@@ -364,14 +364,20 @@ public class DatePickerPopWin extends PopupWindow implements OnClickListener {
         if (!TextUtils.isEmpty(dateStr)) {
 
             long milliseconds = getLongFromyyyyMMdd(dateStr);
-            Calendar calendar = Calendar.getInstance(Locale.CHINA);
+            Calendar calendar = Calendar.getInstance(Locale.US);
+            long currentTime = calendar.getTimeInMillis();
 
             if (milliseconds != -1) {
+                calendar.setTimeInMillis(currentTime);
 
-                calendar.setTimeInMillis(milliseconds);
-                yearPos = 0;
                 monthPos = 0;
                 dayPos = 0;
+
+                if (currentTime > minDate && currentTime < maxDate) {
+                    yearPos = calendar.get(Calendar.YEAR) - minYear;
+                } else {
+                    yearPos = 0;
+                }
             }
         }
     }
